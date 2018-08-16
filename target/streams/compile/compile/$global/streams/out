@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/models/TransactionStore.java:34:1: void cannot be dereferenced[0m
+[0m[[0m[31merror[0m] [0m[0m				System.out.println("New entry").[0m
+[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/models/TransactionStore.java:40:1: void cannot be dereferenced[0m
+[0m[[0m[31merror[0m] [0m[0m			System.out.println("Already exists").[0m
