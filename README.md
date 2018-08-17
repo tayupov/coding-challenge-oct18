@@ -86,3 +86,9 @@ $ sbt run
 	average_amount_per_order: “45.04”
 }
 ```
+
+## Testing
+Find tests under `/test` directory. Run with:
+```
+$ sbt test
+```
