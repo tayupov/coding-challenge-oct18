@@ -17,7 +17,7 @@ public class TransactionsController extends Controller {
 			TransactionStore.getInstance().addTransaction(new Transaction(paramsValue[0]));
 			return status(202);
 		} else {
-			return status(422, "No sales amount provided.");
+			return status(400);
 		}
 
 	}
