@@ -6,11 +6,14 @@ public class StatisticSummary {
 	private double amount;
 
 	public StatisticSummary() {
-		this.count = 1;
+		this.count = 0;
 		this.amount = 0;
 	}
 
 	public double getAverage() {
+		if (this.amount == 0 && this.count == 0) {
+			return 0.0;
+		}
 		return this.amount/this.count;
 	}
 

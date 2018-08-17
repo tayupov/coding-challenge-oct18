@@ -23,6 +23,9 @@ public class TransactionStore {
 		return instance;
 	}
 
+	// Store incoming transaction(s) in respective slot
+	// Create new statistic in slot if empty or if slot is stale
+	// For multiple statistics in same slot increase count and sum transaction amount
 	public Transaction addTransaction(Transaction transaction) {
 		int slot = LocalDateTime.ofInstant(Instant.ofEpochMilli(transaction.getTimestamp()*1000), ZoneId.systemDefault()).getSecond();
 		if (statistics[slot] == null || (System.currentTimeMillis()/1000) - statistics[slot].getTimestamp() >= SECONDS)
@@ -40,6 +43,7 @@ public class TransactionStore {
 		return transaction;
 	}
 
+	// Make sure to get only latest transactions and sum count/amount
 	public StatisticSummary getStatistics() {
 		StatisticSummary summary = 
 			Arrays.stream(statistics)

@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/controllers/StatisticsController.java:5:1: package org.codehaus.jackson.node does not exist[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.codehaus.jackson.node.ObjectNode;[0m
-[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/controllers/StatisticsController.java:13:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/controllers/StatisticsController.java:12:1: cannot find symbol[0m
 [0m[[0m[31merror[0m] [0m[0m  symbol:   class ObjectNode[0m
 [0m[[0m[31merror[0m] [0m[0m  location: class controllers.StatisticsController[0m
 [0m[[0m[31merror[0m] [0m[0m		ObjectNode result = Json.newObject();[0m
