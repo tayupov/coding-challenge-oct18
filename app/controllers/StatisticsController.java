@@ -1,16 +1,17 @@
 package controllers;
 
 import play.mvc.*;
+import play.libs.Json;
 import models.TransactionStore;
-
-import java.util.DoubleSummaryStatistics;
+import models.StatisticSummary;
 
 public class StatisticsController extends Controller {
 	
 	public Result get() {
-		DoubleSummaryStatistics stats = TransactionStore.getInstance().getStatistics();
-		System.out.println(Long.toString(stats.getCount()));
-		System.out.println(Double.toString(stats.getAverage()));
+		StatisticSummary summary = TransactionStore.getInstance().getStatistics();
+		ObjectNode result = Json.newObject();
+		System.out.println(summary.getAverage());
+		System.out.println(summary.getAmount());
 		return ok("ok");
 	}
 

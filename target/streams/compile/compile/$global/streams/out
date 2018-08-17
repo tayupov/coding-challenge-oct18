@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/models/TransactionStore.java:34:1: void cannot be dereferenced[0m
-[0m[[0m[31merror[0m] [0m[0m				System.out.println("New entry").[0m
-[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/models/TransactionStore.java:40:1: void cannot be dereferenced[0m
-[0m[[0m[31merror[0m] [0m[0m			System.out.println("Already exists").[0m
+[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/controllers/StatisticsController.java:5:1: package org.codehaus.jackson.node does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.codehaus.jackson.node.ObjectNode;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/roman/dev/play-java-seed/app/controllers/StatisticsController.java:13:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ObjectNode[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.StatisticsController[0m
+[0m[[0m[31merror[0m] [0m[0m		ObjectNode result = Json.newObject();[0m
