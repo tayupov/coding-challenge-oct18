@@ -57,8 +57,8 @@ From the root directory run:
 ```
 $ sbt run
 ```
-
-## Transaction
+# API
+## Transactions
 **URL:** /sales  
 **Method:** POST  
 **Content-Type:** application/x-www-form-urlencoded  
@@ -73,7 +73,7 @@ $ sbt run
 **Return Body:** ​ blank
 
 
-## Statistic
+## Statistics
 **URL:** /statistics  
 **Method:** ​ GET  
 **Parameters:** ​ none  
